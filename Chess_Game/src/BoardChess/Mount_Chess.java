@@ -1,9 +1,8 @@
-import BoardChess.Board_Default;
-import BoardChess.Piece;
+package BoardChess;
 
-public class ControllerChess extends Board_Default {
+public class Mount_Chess extends Board_Default {
 
-    public static void main(String[] args) {
+    public Board_Default Mount_Chess_Default() {
 
         Board_Default chess = new Board_Default();
         chess.setPieceOp(0,0, Piece.ROOK_WHITE);
@@ -31,8 +30,7 @@ public class ControllerChess extends Board_Default {
             chess.setPieceOp(6 , i, Piece.PAWN_BLACK);
         }
 
-        System.out.println(chess);
-        System.out.println(chess.getPieceOp());
+        return chess;
 
     }
 
